@@ -13,7 +13,7 @@ getInfo :: FilePath -> FilePath -> IO()
 The text file is defined by the commits syntaxis used by Git and the
 returned .csv file has the format.
 
-`\<Author\>,\<Committer\>,\<Author Email\>,\<Commit ID\>,\<Parent\>,\<GPG Signed?\>,\<Commit Message\>`
+`<Author>,<Committer>,<Author Email>,<Commit ID>,<Parent>,<GPG Signed?>,<Commit Message>`
 
 ## How to use it
 ### Packages
