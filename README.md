@@ -24,7 +24,7 @@ The following libraries are used in the program
 Add to the ghc packages using `$ cabal update` 
 and `$ cabal install`.
 
-### Use
+### Usage
 Load the code with
 
 `$ ghc GetCommitsInfo.hs`
