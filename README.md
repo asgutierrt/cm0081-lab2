@@ -16,17 +16,18 @@ returned .csv file has the format
 
 ## How to use it
 ### Packages
-Add to the ghc packages using `$ cabal update && cabal install`
-```haskell
-import Text.Regex.TDFA
-```
+The following libraries are used in the program
+* `regex-tdfa`
+* `cassava`
+Add to the ghc packages using `$ cabal update` 
+and `$ cabal install`
 
 ### Use
 Load the code with
 
-  $ ghc GetCommitsInfo.hs
+`$ ghc GetCommitsInfo.hs`
   
-  $.\getInfo nameTXT.txt nameCSV.csv
+`$.\getInfo nameTXT.txt nameCSV.csv`
   
 
 The program reads the contents in `nameTXT.txt` line by line and 
