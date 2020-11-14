@@ -33,10 +33,11 @@ Load the code with
   
 
 The program takes the contents in the `nameTXT.txt` file saved in the same 
-directory as the program. It reads the file line by line and 
-process each of them using regular expresions from the 
+directory as the program. It reads it line by line and 
+process them using regular expresions from the 
 [regex-tdfa](http://hackage.haskell.org/package/regex-tdfa) library.
-The contents are written in a .csv file named `nameCSV.csv`.
+The contents are written in a .csv file named `nameCSV.csv` using the 
+[cassava](https://hackage.haskell.org/package/cassava) library
 
 ## Used Versions
 OS Microsoft Windows 10 Home Version 10.0.18363
