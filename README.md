@@ -1,19 +1,19 @@
 # Programming Lab 2: Git Commits in a Repository
 ### Names
-Ana Sofia Gutierrez, Manuela Zapata Mesa
+Ana Sofia Gutiérrez, Manuela Zapata Mesa
 ## General description
 Module containing the function getInfo which
 
 Takes a .txt file with the Git Commits of a project and returns
-a .csv file with the information of each commit
+a .csv file with the information of each commit.
 
 ```haskell
 getInfo :: FilePath -> FilePath -> IO()
 ```
 The text file is defined by the commits syntaxis used by Git and the
-returned .csv file has the format
+returned .csv file has the format.
 
->\<Author\>,\<Committer\>,\<Author Email\>,\<Commit ID\>,\<Parent\>,\<GPG Signed?\>,\<Commit Message\>
+`\<Author\>,\<Committer\>,\<Author Email\>,\<Commit ID\>,\<Parent\>,\<GPG Signed?\>,\<Commit Message\>`
 
 ## How to use it
 ### Packages
@@ -22,7 +22,7 @@ The following libraries are used in the program
 * `cassava`
 
 Add to the ghc packages using `$ cabal update` 
-and `$ cabal install`
+and `$ cabal install`.
 
 ### Use
 Load the code with
@@ -37,7 +37,7 @@ directory as the program. It reads it line by line and
 process them using regular expresions from the 
 [regex-tdfa](http://hackage.haskell.org/package/regex-tdfa) library.
 The contents are written in a .csv file named `nameCSV.csv` using the 
-[cassava](https://hackage.haskell.org/package/cassava) library
+[cassava](https://hackage.haskell.org/package/cassava) library.
 
 ## Used Versions
 OS Microsoft Windows 10 Home Version 10.0.18363
