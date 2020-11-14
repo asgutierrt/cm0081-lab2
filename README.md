@@ -1,4 +1,5 @@
-## Names
+# Programming Lab 2: Git Commits in a Repository
+### Names
 Ana Sofia Gutierrez, Manuela Zapata Mesa
 ## General description
 Module containing the function getInfo which
@@ -19,6 +20,7 @@ returned .csv file has the format
 The following libraries are used in the program
 * `regex-tdfa`
 * `cassava`
+
 Add to the ghc packages using `$ cabal update` 
 and `$ cabal install`
 
