@@ -12,10 +12,15 @@ The Dfa is defined by the module DFA given in the assignment
 
 ## How to use it
 ### Packages
-Add to the ghc packages using cabal
+Add to the ghc packages using `$ cabal update && cabal install`
+```haskell
+import Text.Regex.TDFA
+```
 
-### Example
-Run `$ghc GetCommitsInfo.hs` and the function `$.\getInfo nameTXT nameCSV`
+### Use
+Load the code with
+  $ ghc GetCommitsInfo.hs
+  $.\getInfo nameTXT nameCSV
 
 The program executes recursively the number S of ways to reach each accepting state in the DFA in k-steps by adding the number of words of k-1 length that can reach each state times the number of words that can go from that state to an accepting state in 1 step.
 
