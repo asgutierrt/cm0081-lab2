@@ -7,12 +7,12 @@ Takes a .txt file with the Git Commits of a project and returns
 a .csv file with the information of each commit
 
 ```haskell
-getInfo :: DFA s c -> Int -> Int
+getInfo :: FilePath -> FilePath -> IO()
 ```
 The text file is defined by the commits syntaxis used by Git and the
 returned .csv file has the format
 
-<Author>,<Committer>,<Author Email>,<Commit ID>,<Parent>,<GPG Signed?>,<Commit Message>
+>\<Author\>,\<Committer\>,\<Author Email\>,\<Commit ID\>,\<Parent\>,\<GPG Signed?\>,\<Commit Message\>
 
 ## How to use it
 ### Packages
@@ -23,13 +23,16 @@ import Text.Regex.TDFA
 
 ### Use
 Load the code with
-  $ ghc GetCommitsInfo.hs
-  $.\getInfo nameTXT nameCSV
 
-The program reads the contents in `nameTXT` line by line and 
+  $ ghc GetCommitsInfo.hs
+  
+  $.\getInfo nameTXT.txt nameCSV.csv
+  
+
+The program reads the contents in `nameTXT.txt` line by line and 
 process them using regular expresions from the 
 [regex-tdfa](http://hackage.haskell.org/package/regex-tdfa) library.
-The contents are written in a .csv file named `nameCSV`.
+The contents are written in a .csv file named `nameCSV.csv`.
 
 ## Used Versions
 OS Microsoft Windows 10 Home Version 10.0.18363
