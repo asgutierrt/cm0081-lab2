@@ -32,8 +32,8 @@ Load the code with
 `$.\getInfo nameTXT.txt nameCSV.csv`
   
 
-The program reads the contents in `nameTXT.txt` saved in the same 
-directory as the program file line by line and 
+The program takes the contents in the `nameTXT.txt` file saved in the same 
+directory as the program. It reads the file line by line and 
 process each of them using regular expresions from the 
 [regex-tdfa](http://hackage.haskell.org/package/regex-tdfa) library.
 The contents are written in a .csv file named `nameCSV.csv`.
