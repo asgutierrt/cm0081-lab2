@@ -1,14 +1,18 @@
 ## Names
 Ana Sofia Gutierrez, Manuela Zapata Mesa
 ## General description
-Module containing the function getInfo
+Module containing the function getInfo which
 
-Takes a DFA and an integer number k and returns how many words of size k belong to the language of the given DFA
+Takes a .txt file with the Git Commits of a project and returns
+a .csv file with the information of each commit
 
-`getInfo :: DFA s c -> Int -> Int`
+```haskell
+getInfo :: DFA s c -> Int -> Int
+```
+The text file is defined by the commits syntaxis used by Git and the
+returned .csv file has the format
 
-The Dfa is defined by the module DFA given in the assignment
-
+<Author>,<Committer>,<Author Email>,<Commit ID>,<Parent>,<GPG Signed?>,<Commit Message>
 
 ## How to use it
 ### Packages
@@ -22,11 +26,15 @@ Load the code with
   $ ghc GetCommitsInfo.hs
   $.\getInfo nameTXT nameCSV
 
-The program executes recursively the number S of ways to reach each accepting state in the DFA in k-steps by adding the number of words of k-1 length that can reach each state times the number of words that can go from that state to an accepting state in 1 step.
+The program reads the contents in `nameTXT` line by line and 
+process them using regular expresions from the 
+[regex-tdfa](http://hackage.haskell.org/package/regex-tdfa) library.
+The contents are written in a .csv file named `nameCSV`.
 
 ## Used Versions
 OS Microsoft Windows 10 Home Version 10.0.18363
 
 GHC, version 8.10.1
 
-[HLint](https://hackage.haskell.org/package/hlint) v3.1.6, (C) Neil Mitchell 2006-2020
+[HLint](https://hackage.haskell.org/package/hlint) v3.1.6, 
+(C) Neil Mitchell 2006-2020
