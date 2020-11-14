@@ -39,7 +39,7 @@ process them using regular expresions from the
 The contents are written in a .csv file named `nameCSV.csv` using the 
 [cassava](https://hackage.haskell.org/package/cassava) library.
 
-## Used Versions
+## Versions
 OS Microsoft Windows 10 Home Version 10.0.18363
 
 GHC, version 8.10.1
