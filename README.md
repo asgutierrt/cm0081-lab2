@@ -2,7 +2,7 @@
 ### Names
 Ana Sofia Gutiérrez, Manuela Zapata Mesa
 ## General description
-Module containing the function getInfo which
+Module containing the function `getInfo` which
 
 Takes a .txt file with the Git Commits of a project and returns
 a .csv file with the information of each commit.
@@ -27,9 +27,9 @@ and `$ cabal install`.
 ### Usage
 Load the code with
 
-`$ ghc GetCommitsInfo.hs`
+`$ ghci GetCommitsInfo.hs`
   
-`$.\getInfo nameTXT.txt nameCSV.csv`
+`$ GetCommitsInfo > getInfo nameTXT.txt nameCSV.csv`
   
 
 The program takes the contents in the `nameTXT.txt` file saved in the same 
