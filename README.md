@@ -40,7 +40,7 @@ The contents are written in a .csv file named `nameCSV.csv` using the
 [cassava](https://hackage.haskell.org/package/cassava) library.
 
 ## Versions
-OS Microsoft Windows 10 Home Version 10.0.18363
+Linux Version 4.19.0-11-amd64 x86_64
 
 GHC, version 8.10.1
 
